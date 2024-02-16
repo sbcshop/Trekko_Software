@@ -1,5 +1,5 @@
 # Trekko_Software
-<img src="">
+<img src="https://github.com/sbcshop/Trekko_Software/raw/main/images/trekko_banner.jpg">
 
 
 This Github provides a getting started guide and other working details for the Trekko - Pico GPS Logger.
@@ -16,7 +16,7 @@ This Github provides a getting started guide and other working details for the T
 
 ### Hardware Overview
 #### Pinout
-<img src="">
+<img src="https://github.com/sbcshop/Trekko_Software/blob/main/images/trekko_pinout.jpg">
 
 ### Interfacing Details
 - GPS module interfacing
@@ -47,13 +47,30 @@ or to download the latest firmware file from the official site, [visit here](htt
 
 
 ## Resources
-  * [Schematic]()
-  * [Hardware Files]()
-  * [Step File]()
+  * [Schematic](https://github.com/sbcshop/Trekko_Hardware)
+  * [Hardware Files](https://github.com/sbcshop/Trekko_Hardware)
+  * [Step File](https://github.com/sbcshop/Trekko_Hardware/blob/main/Mechanical%20Data/TREKKO.step)
   * [3D Casing File]()
 
 
+## Related Products
+  * [GPS External Antenna](https://shop.sb-components.co.uk/products/gps-external-antenna?_pos=1&_sid=7f1c5cecc&_ss=r) 
+   
+     ![GPS_External_Antenna](https://shop.sb-components.co.uk/cdn/shop/products/GPSAntenna_2.jpg?v=1640588714&width=300)   
 
+  * [GPS HAT for Raspberry Pi](https://shop.sb-components.co.uk/products/gps-hat-for-raspberry-pi?_pos=6&_sid=7f1c5cecc&_ss=r) 
+   
+     ![gps-hat-for-raspberry-pi](https://shop.sb-components.co.uk/cdn/shop/products/GPSHATforRaspberryPi_5.png?v=1648553361&width=300) 
+
+  * [IoTFi 4G/2G : IoT Board based on RP2040](https://shop.sb-components.co.uk/products/iotfi-2g-4g-iot-board-based-on-rp2040?variant=40430002307155) 
+   
+     ![IoTFi 4G/2G : IoT Board based on RP2040](https://shop.sb-components.co.uk/cdn/shop/products/Untitled-2_1.png?v=1679651257&width=300)
+    
+  * [UBlox GPS-RTK Breakout](https://shop.sb-components.co.uk/products/gps-rtk-hat-gps-rtk-hat-with-high-precision-rtk-gps-location-at-the-cm-level?_pos=3&_sid=7f1c5cecc&_ss=r) 
+   
+     ![UBlox GPS-RTK Breakout](https://shop.sb-components.co.uk/cdn/shop/products/03_32836ef3-a3d3-4039-bbd2-14d97fb53879.png?v=1675245485&width=300) 
+
+ 
 ## Product License
 
 This is ***open source*** product. Kindly check LICENSE.md file for more information.
@@ -62,4 +79,3 @@ Please contact support@sb-components.co.uk for technical support.
 <p align="center">
   <img width="360" height="100" src="https://cdn.shopify.com/s/files/1/1217/2104/files/Logo_sb_component_3.png?v=1666086771&width=300">
 </p>
-  
