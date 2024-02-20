@@ -47,7 +47,7 @@ or to download the latest firmware file from the official site, [visit here](htt
 
 
 ## Resources
-  * [Schematic](https://github.com/sbcshop/Trekko_Hardware)
+  * [Schematic](https://github.com/sbcshop/Trekko_Hardware/blob/main/Design%20Data/Sch.pdf)
   * [Hardware Files](https://github.com/sbcshop/Trekko_Hardware)
   * [Step File](https://github.com/sbcshop/Trekko_Hardware/blob/main/Mechanical%20Data/TREKKO.step)
   * [3D Casing File]()
