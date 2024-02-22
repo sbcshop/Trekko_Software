@@ -1,6 +1,7 @@
 # Trekko_Software
 <img src="https://github.com/sbcshop/Trekko_Software/raw/main/images/trekko_banner.jpg">
 
+Trekko Pico GPS Logger: Your ultimate companion for precise tracking and long-lasting adventures. Whether you're an avid traveler, outdoor enthusiast, or just someone who wants to track their daily routes, the Trekko Pico GPS Logger is your ideal companion.
 
 This Github provides a getting started guide and other working details for the Trekko - Pico GPS Logger.
 
@@ -39,11 +40,27 @@ This Github provides a getting started guide and other working details for the T
 	- Speed Accuracy: 0.1m/s
 	- Acceleration Accuracy(MAX): 0.1m/s²
 	- Timing Accuracy: 30ns
+ 	- [More Info]() 
 
 
 ### Hardware Overview
 #### Pinout
 <img src="https://github.com/sbcshop/Trekko_Software/blob/main/images/trekko_pinout.jpg">
+
+- 1)BT1 Programmable Button
+- 2)BOOT Button
+- 3)F_ON Programmable Button
+- 4)UFL Antenna connector
+- 5)RGB LED
+- 6)Status LED for PPS, Data transmission & Board Power
+- 7)GPS Module
+- 8)Battery Charging Status
+- 9)RP2040 Chip
+- 10)Type C 
+- 11)Coin Cell Holder (CR1220/3V)
+- 12)GPIOs Breakout (SH_1x6P_1mm)
+- 13)TF card slot
+- 14)Battery Connector (JST_1x2P_2mm)
 
 ### Interfacing Details
 - GPS module interfacing
@@ -53,10 +70,31 @@ This Github provides a getting started guide and other working details for the T
   |GP4 (TXD1) | RX | Serial UART connection |
   |GP5 (RXD1) | TX  | Serial UART connection |
 
-- SD Card interfacing
-  
+- SD Card interfacing : SPI0 of Pico is used for interfacing SDcard 
   | Pico RP2040 | SDCard | Function |
   |---|---|---|
+  |GP18 | SCK | SPI clock pin|
+  |GP19 | MOSI | SPI Master OUT Slave IN interface pin|
+  |GP16 | MISO | SPI Master IN Slave OUT interface pin |
+  |GP17 | CS | Chip Select pin|
+
+- RGB LED, Button, Battery Interfacing
+  | Pico RP2040 | Hardware | Description |
+  |---|---|---|
+  |GP6 | RGBLED | DIN pin of WS2812B RGB|
+  |GP7 | BT1 | Programmable Button|
+  |GP15 | F_ON | Programmable Button|
+  |GP27(ADC1) | Battery Sense| Analog read for Battery Voltage|
+
+- GPIOs Breakout : GPIO pins breakout as SH 6 pin connector pitch 1mm
+  | Breakout | Details | 
+  |---|---|
+  |3V3 | Positive 3.3V Supply | 
+  |GND | Supply Ground Pin |
+  |GP0 | Multifunction GPIO |
+  |GP1 | Multifunction GPIO |
+  |GP2 | Multifunction GPIO |
+  |GP3 | Multifunction GPIO | 
  
 
 ## Getting Started with Trekko 
@@ -83,6 +121,7 @@ or to download the latest firmware file from the official site, [visit here](htt
   * [Hardware Files](https://github.com/sbcshop/Trekko_Hardware)
   * [Step File](https://github.com/sbcshop/Trekko_Hardware/blob/main/Mechanical%20Data/TREKKO.step)
   * [3D Casing File]()
+  * [L76K Module Datasheet]()
 
 
 ## Related Products
