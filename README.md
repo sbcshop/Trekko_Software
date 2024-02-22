@@ -5,13 +5,40 @@
 This Github provides a getting started guide and other working details for the Trekko - Pico GPS Logger.
 
 ### Features:
-
-- Type C Power/UART
-
+- Powered by Pico RP2040 microcontroller chip
+- Onboard GPS module for Geo Location tracking 
+- Interface: Type C for programming/power
+- Onboard Battery charging and management for portability 
+- RTC battery holder for Real time Data Backup
+- Easy Data logging with onboard micro SD card support 
+- Additional GPIOs breakout for peripheral interfacing
+- Programmable RGB LED for various activity status indications 
+- Status led for board power, PPS signal, Tx and Rx state indication
+- Programmable buttons for adding additional controls
+- Boot button also available for firmware flashing
+- Plug and play without driver start using board 
+- Drag and drop programming with Multi platforms like Micropython, circuitpython and arduino support.
   
 ### Specifications:
-- Board Supply Voltage: 5V
+- Microcontroller: RP2040 Dual ARM Cortex-M0+ @ 133MHz, 2MB onboard Flash
+- Board Supply Voltage: 5V 
 - Operating Pin Voltage: 3.3V
+- Battery Charge Management: MCP73831 
+- RGB LED: WS2812B  
+- GPIO Breakout: SH 6 pin connector, 1mm
+- GNSS Module LC76K =>
+	- Supports Multi-GNSS systems: GPS/GLONASS/BDS/QZSS
+	- Protocol: NMEA 0183 
+	- Accuracy of 1PPS Signal:  < 100 ns 
+	- UART Communication Baud Rate: 4800 ~ 115200 bps (9600 bps by default)
+	- L1 Band Receiver: 32 tracking ch/ 72 acquisition ch
+	- Sensitivity: Acquisition -148dBm, Re-Acquisition -160dBm, Tracking -162dBm
+	- TTFF (TIME TO FIRST FIX): For Cold Starts=> - 30s Autonomous, 5.5s AGNSS and for HOT Starts => 2s
+	- GNSS DATA UPDATE RATE:  Max 5Hz (Default 1Hz)
+	- Position Accuracy: 2.0m CEP
+	- Speed Accuracy: 0.1m/s
+	- Acceleration Accuracy(MAX): 0.1m/s²
+	- Timing Accuracy: 30ns
 
 
 ### Hardware Overview
@@ -23,9 +50,14 @@ This Github provides a getting started guide and other working details for the T
   
   | Pico RP2040 | GPS L76 Module | Function |
   |---|---|---|
-  |UART0 TX | RX | Serial UART connection |
-  |UART0 RX | TX  | Serial UART connection |
+  |GP4 (TXD1) | RX | Serial UART connection |
+  |GP5 (RXD1) | TX  | Serial UART connection |
 
+- SD Card interfacing
+  
+  | Pico RP2040 | SDCard | Function |
+  |---|---|---|
+ 
 
 ## Getting Started with Trekko 
 ### 1. How to Install Boot Firmware in Pico of Trekko
