@@ -114,6 +114,38 @@ or to download the latest firmware file from the official site, [visit here](htt
 - Drag and drop the MicroPython UF2 - ["Trekko_Firmware.uf2"](https://github.com/sbcshop/Trekko_Software/blob/main/Trekko_Firmware.uf2) file provided in this github onto the RPI-RP2 volume. Reference image shown below how to transfer any UF2 file or you can copy paste as well. Device will reboot and you are now running MicroPython on Trekko. 
   <img src= "https://github.com/sbcshop/PiCoder-Software/blob/main/images/firmware_installation.gif" />
 
+<!--
+### 2. Onboard LED Blink 
+   - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
+   - Once done start **Thonny IDE application**, Connect PiBeam to laptop/PC.
+   - Select device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
+   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/onboardLED_demo.py), then click on the green run button to make your script run on PiBeam. Make sure that you have also saved [PiBeam Library](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/PiBeam.py) file to device to avoid any execution error.
+     
+      <img src= "https://github.com/sbcshop/PiBeam_Software/blob/main/images/LED_blink.png" />
+     
+     Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug PiBeam, it will stop running. To run your script without using an IDE, simply power up PiBeam and it should run your script, go to step 3.
+
+### 3. How to move your script on PiBeam
+   - Click on File -> Save Copy -> select Raspberry Pi Pico , Then save file as **main.py**
+     
+      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/transfer_script_pico.gif" />
+   
+      In similar way you can add various python code files to Pico of Trekko. Also you can try out sample codes given here in [examples folder](https://github.com/sbcshop/Trekko_Software/tree/main/examples). 
+   
+   - But in case if you want to move multiple files at one go, example suppose you are interested to save library files folder, below image demonstrate that
+     
+      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/images/multiple_file_transfer.gif" />
+   - Here, we need only one library file [trekkoGPS.py](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/PiBeam.py) for most of our code to try out, so move this to PiBeam with default name
+
+   
+-->
+### Example Codes
+   Save whatever example code file you want to try as **main.py** and make sure you have added [trekko library](https://github.com/sbcshop/Trekko_Software/blob/main/examples/trekkoGPS.py) file.
+   In [example](https://github.com/sbcshop/PiBeam_Software/tree/main/examples) folder you will find demo example script code to test onboard components of Trekko like 
+   - [Button and LED](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_RGB_BTN.py) : code to test programmable buttons and RGB LED
+   - [SD card](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_SDcard.py) : code to test micro SD card basic operations
+   - [GPS Location](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_GPS.py) : This demonstrates how to get current GPS location co-ordinates.
+   Using this sample code as a guide, you can modify, build, and share codes!! 
 
 
 ## Resources
