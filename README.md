@@ -141,7 +141,7 @@ or to download the latest firmware file from the official site, [visit here](htt
 -->
 ### Example Codes
    Save whatever example code file you want to try as **main.py** and make sure you have added [trekko library](https://github.com/sbcshop/Trekko_Software/blob/main/examples/trekkoGPS.py) file.
-   In [example](https://github.com/sbcshop/PiBeam_Software/tree/main/examples) folder you will find demo example script code to test onboard components of Trekko like 
+   In [example](https://github.com/sbcshop/Trekko_Software/tree/main/examples) folder you will find demo example script code to test onboard components of Trekko like 
    - [Button and LED](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_RGB_BTN.py) : code to test programmable buttons and RGB LED
    - [SD card](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_SDcard.py) : code to test micro SD card basic operations
    - [GPS Location](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_GPS.py) : This demonstrates how to get current GPS location co-ordinates.
